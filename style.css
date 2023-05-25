@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 10px solid Gainsboro;
+}
+
+.flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.item-1 {
+  background-color: Snow;
+}
+.item-2 {
+  background-color: HoneyDew;
+}
+.item-3 {
+  background-color: Azure;
+}
+.item-4 {
+  background-color: Beige;
+}
+.item-5 {
+  background-color: Ivory;
+}
+.item-6 {
+  background-color: LavenderBlush;
+}
+.item-7 {
+  background-color: MistyRose;
+}
+.item-8 {
+  background-color: Lavender;
+}
+.item-9 {
+  background-color: LightPink;
+}
