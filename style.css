@@ -1,19 +1,26 @@
 body {
   margin: 0;
 }
+
+/* display
+flex and inline-flex = create either a block level or inline flex container
+ */
 .container {
   border: 10px solid Gainsboro;
+  display: inline-flex;
+  margin: 0.5rem;
 }
 
 .flex-item {
-  color: white;
-  font-size: 1.5rem;
+  color: grey;
+  font-size: 1.2rem;
   padding: 1rem;
   text-align: center;
 }
 
 .item-1 {
   background-color: Snow;
+  font-weight: bold;
 }
 .item-2 {
   background-color: HoneyDew;
@@ -37,5 +44,37 @@ body {
   background-color: Lavender;
 }
 .item-9 {
-  background-color: LightPink;
+  background-color: lightpink;
+}
+
+/* flex direction
+row (default)   = display the item from left to right
+row reverse     = display the item from right to left
+column          = display the item from top to bottom
+column reverse  = display the item from bottom to top
+ */
+.container-2 {
+  border: 10px solid Gainsboro;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin: 1rem;
+}
+.container-2 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0.5rem;
+}
+
+/* CSS warp prop
+warp          = perevent the item from going overflow/shrink, the item moves to the next row (move down) when the browser width get reduce
+no warp       = default, not doing anything -__-
+reverse warp  = just like wrap but the item will go up
+*/
+.container-3 {
+  border: 10px solid Gainsboro;
+  display: inline-flex;
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  margin: 0.5rem;
 }
