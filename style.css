@@ -78,3 +78,66 @@ reverse warp  = just like wrap but the item will go up
   flex-wrap: wrap;
   margin: 0.5rem;
 }
+
+/* flex flow 
+setting up flex direction and flex warp
+*/
+.container-4 {
+  border: 10px solid Gainsboro;
+  display: inline-flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap-reverse;
+  margin: 0.5rem;
+}
+
+/* gap properties
+sets gap between columns
+values can be use: non negative value / percentage
+*/
+.container-5 {
+  border: 10px solid Gainsboro;
+  display: inline-flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  gap: 40px 20px;
+  margin: 0.5rem;
+}
+
+/* justify content
+flex start     = align item to the left or top
+flex end       = align item to the right or bottom
+center         = align item to the center
+space between  = an equally space between the item (no space on start and end)
+space around   = space equally distributed between the item, but the space on the start and end value are half of the space between the item
+space evenly   = space equally distributed between the item
+*/
+.container-6 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  /* gap: 40px 20px; */
+  justify-content: space-evenly;
+  margin: 0.5rem;
+}
+.container-7 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 300px;
+  width: 1000px;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  flex-flow: column wrap;
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  /* gap: 40px 20px; */
+  justify-content: center;
+  margin: 0.5rem;
+}
