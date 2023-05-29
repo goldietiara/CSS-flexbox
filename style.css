@@ -16,6 +16,7 @@ flex and inline-flex = create either a block level or inline flex container
   font-size: 1.2rem;
   padding: 1rem;
   text-align: center;
+  /* flex-grow: 1; */
 }
 
 .item-1 {
@@ -139,5 +140,111 @@ space evenly   = space equally distributed between the item
   row-gap: 20px; */
   /* gap: 40px 20px; */
   justify-content: center;
+  margin: 0.5rem;
+}
+
+/* align items 
+strech         = the flex items the entire length of the cross axis (y)
+flex start     = move the items to top left but did not strch the items
+flex end       = move the items to bottom left but did not strch the items
+center         = center the item along the cross axis
+baseline       = positioned based on where the item will sit (align by the text, good for bar chart i guest (?))
+space between  = adding space between the two rows
+space around   = distribute space around the lines, center portion (space) has twice value of the edges (space)
+*/
+.container-8 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  align-items: stretch;
+  margin: 0.5rem;
+}
+
+.container-9 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  /* width: 50vw; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* flex-flow: column wrap; */
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  /* gap: 40px 20px; */
+  /* justify-content: center; */
+  align-items: baseline;
+  margin: 0.5rem;
+}
+
+/* flex properties items 
+order        = control the order of items in the flex containter (value: int)
+flex grow    = amount of space inside the fixed container (0 not grow, 1 grow evenly)
+flex shrink  = shrink the flex items if necessary (0 no shrink, 1 shrink (default), >1 srhink earlier/more)
+flex basis   = set the inital size of a flex item (value: px, %, relative units ||| default value is autp)
+*/
+.container-10 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0.5rem;
+}
+.container-11 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  margin: 0.5rem;
+}
+.container-12 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  /* width: 50vw; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  /* gap: 40px 20px; */
+  /* justify-content: center; */
+  /* align-items: baseline; */
+  margin: 0.5rem;
+}
+
+/* 
+flex
+no value = grow | shrink | basis
+can be specified by one, two or their values
+ex = 1 30px   [means: grow, basis]
+   = 1 em     [means: width/height]
+   = 1 0 10%  [means: grow, shrink, basis]
+   = 1 10% 0  [means: grow, basis, shrink]
+
+ = em -> width/height
+ = px, % -> basis
+ */
+
+/* align self 
+start   = move item to top
+end     = move item to bottom
+center  = move item to center
+strech  = streched the item 
+auto    = inherit from the parent align items
+*/
+.container-13 {
+  border: 10px solid Gainsboro;
+  display: flex;
+  height: 50vh;
+  /* width: 50vw; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  /* gap: 40px 20px; */
+  /* justify-content: center; */
+  /* align-items: baseline; */
   margin: 0.5rem;
 }
